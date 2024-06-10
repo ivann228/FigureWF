@@ -10,11 +10,5 @@
         {
             return "Simple Figure";
         }
-
-        ccvvvvvvv
-
-
-
-
     }
 }

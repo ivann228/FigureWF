@@ -16,11 +16,7 @@ namespace FiguresWF
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
-            //мм
-
-          //847983798
-          //rjvtyn 
-          //3567983oiu
+           
         }
     }
 }

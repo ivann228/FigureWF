@@ -18,6 +18,8 @@ namespace FiguresWF
                 case 0: // прямоугольник
                     fig = new Rect((double)size1_numericUpDown.Value, (double)size2_numericUpDown.Value);
                     break;
+                case 1: //окружность
+                    break;
             }
             protocol_listBox.Items.Add(fig.ToString() + ": S=" + fig.Square());
         }
