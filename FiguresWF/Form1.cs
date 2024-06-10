@@ -28,7 +28,10 @@ namespace FiguresWF
                     fig = new trapezoid((double)size1_numericUpDown.Value, (double)size2_numericUpDown.Value,
     (double)size4_numericUpDown.Value, (double)size5_numericUpDown.Value, (double)size3_numericUpDown.Value);
                     break;
-
+                case 4: //треугольник
+                    fig = new triangle((double)size1_numericUpDown.Value, (double)size2_numericUpDown.Value,
+            (double)size4_numericUpDown.Value, (double)size3_numericUpDown.Value);
+                    break;
             }
             protocol_listBox.Items.Add(fig.ToString() + ": S=" + fig.Square());
         }
@@ -90,6 +93,21 @@ namespace FiguresWF
                     size4_numericUpDown.Visible = true;
                     break;
 
+                case 4: //треугольник
+                    fig = new triangle((double)size1_numericUpDown.Value, (double)size2_numericUpDown.Value,
+            (double)size4_numericUpDown.Value, (double)size3_numericUpDown.Value);
+                    label2.Text = "основание";
+                    label3.Text = "ребро 1";
+                    label5.Text = "ребро 2";
+                    label3.Visible = true;
+                    size2_numericUpDown.Visible = true;
+                    label5.Visible = true;
+                    label4.Visible = false;
+                    label6.Visible = true;
+                    size5_numericUpDown.Visible = false;
+                    size3_numericUpDown.Visible = true;
+                    size4_numericUpDown.Visible = true;
+                    break;
             }
         }
 
@@ -110,7 +128,11 @@ namespace FiguresWF
                 case 3: //трапеция
                     fig = new trapezoid((double)size1_numericUpDown.Value, (double)size2_numericUpDown.Value,
     (double)size4_numericUpDown.Value, (double)size5_numericUpDown.Value, (double)size3_numericUpDown.Value);
-                    break; 
+                    break;
+                case 4: //треугольник
+                    fig = new triangle((double)size1_numericUpDown.Value, (double)size2_numericUpDown.Value,
+            (double)size4_numericUpDown.Value, (double)size3_numericUpDown.Value);
+                    break;
             }
             protocol_listBox.Items.Add(fig.ToString() + ": P=" + fig.Perimetr);
         }

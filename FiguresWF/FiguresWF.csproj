@@ -59,6 +59,7 @@
     <Compile Include="Rect.cs" />
     <Compile Include="square.cs" />
     <Compile Include="trapezoid.cs" />
+    <Compile Include="triangle.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
