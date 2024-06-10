@@ -30,17 +30,18 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.figure_comboBox = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.size1_numericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
             this.size2_numericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.size1_numericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.figure_comboBox = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.square_button = new System.Windows.Forms.Button();
             this.protocol_listBox = new System.Windows.Forms.ListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.perimetr_button = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.size1_numericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.size2_numericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.size1_numericUpDown)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,25 +68,12 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
-            // figure_comboBox
+            // size2_numericUpDown
             // 
-            this.figure_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.figure_comboBox.FormattingEnabled = true;
-            this.figure_comboBox.Items.AddRange(new object[] {
-            "Прямоугольник"});
-            this.figure_comboBox.Location = new System.Drawing.Point(71, 27);
-            this.figure_comboBox.Name = "figure_comboBox";
-            this.figure_comboBox.Size = new System.Drawing.Size(121, 21);
-            this.figure_comboBox.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 68);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Длина";
+            this.size2_numericUpDown.Location = new System.Drawing.Point(71, 94);
+            this.size2_numericUpDown.Name = "size2_numericUpDown";
+            this.size2_numericUpDown.Size = new System.Drawing.Size(75, 20);
+            this.size2_numericUpDown.TabIndex = 2;
             // 
             // size1_numericUpDown
             // 
@@ -93,6 +81,19 @@
             this.size1_numericUpDown.Name = "size1_numericUpDown";
             this.size1_numericUpDown.Size = new System.Drawing.Size(75, 20);
             this.size1_numericUpDown.TabIndex = 2;
+            // 
+            // figure_comboBox
+            // 
+            this.figure_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.figure_comboBox.FormattingEnabled = true;
+            this.figure_comboBox.Items.AddRange(new object[] {
+            "Прямоугольник",
+            "Окружность"});
+            this.figure_comboBox.Location = new System.Drawing.Point(71, 27);
+            this.figure_comboBox.Name = "figure_comboBox";
+            this.figure_comboBox.Size = new System.Drawing.Size(121, 21);
+            this.figure_comboBox.TabIndex = 1;
+            this.figure_comboBox.SelectedIndexChanged += new System.EventHandler(this.figure_comboBox_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -103,12 +104,14 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Ширина";
             // 
-            // size2_numericUpDown
+            // label2
             // 
-            this.size2_numericUpDown.Location = new System.Drawing.Point(71, 94);
-            this.size2_numericUpDown.Name = "size2_numericUpDown";
-            this.size2_numericUpDown.Size = new System.Drawing.Size(75, 20);
-            this.size2_numericUpDown.TabIndex = 2;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(18, 68);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(40, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Длина";
             // 
             // square_button
             // 
@@ -122,12 +125,14 @@
             // 
             // protocol_listBox
             // 
-            this.protocol_listBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.protocol_listBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.protocol_listBox.FormattingEnabled = true;
             this.protocol_listBox.HorizontalScrollbar = true;
             this.protocol_listBox.Location = new System.Drawing.Point(3, 16);
             this.protocol_listBox.Name = "protocol_listBox";
-            this.protocol_listBox.Size = new System.Drawing.Size(371, 206);
+            this.protocol_listBox.Size = new System.Drawing.Size(371, 199);
             this.protocol_listBox.TabIndex = 3;
             // 
             // groupBox2
@@ -140,20 +145,31 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Протокол расчетов";
             // 
+            // perimetr_button
+            // 
+            this.perimetr_button.Location = new System.Drawing.Point(49, 178);
+            this.perimetr_button.Name = "perimetr_button";
+            this.perimetr_button.Size = new System.Drawing.Size(109, 23);
+            this.perimetr_button.TabIndex = 2;
+            this.perimetr_button.Text = "Расчет периметра";
+            this.perimetr_button.UseVisualStyleBackColor = true;
+            this.perimetr_button.Click += new System.EventHandler(this.perimetr_button_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(626, 249);
             this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.perimetr_button);
             this.Controls.Add(this.square_button);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Демо";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.size1_numericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.size2_numericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.size1_numericUpDown)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -171,6 +187,7 @@
         private System.Windows.Forms.Button square_button;
         private System.Windows.Forms.ListBox protocol_listBox;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button perimetr_button;
     }
 }
 
