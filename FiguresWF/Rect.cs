@@ -1,6 +1,6 @@
 ﻿namespace FiguresWF
 {
-	///прямоугольник++
+	///прямоугольник+++++++++++++++++++
     internal class Rect : Figure
     {
         public double Length { get; set; }
