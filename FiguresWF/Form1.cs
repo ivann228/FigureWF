@@ -21,6 +21,9 @@ namespace FiguresWF
                 case 1: //окружность
                     fig = new Circle((double)size1_numericUpDown.Value);
                     break;
+                case 2: //квадрат
+                    fig = new square((double)size1_numericUpDown.Value);
+                    break;
             }
             protocol_listBox.Items.Add(fig.ToString() + ": S=" + fig.Square());
         }
@@ -39,12 +42,15 @@ namespace FiguresWF
                     break;
                 case 1: //окружность
                     fig = new Circle((double)size1_numericUpDown.Value);
-
-
                     label2.Text = "Радиус";
                     label3.Visible = false;
                     size2_numericUpDown.Visible = false;
-
+                    break;
+                case 2:
+                    fig = new Circle((double)size1_numericUpDown.Value);
+                    label2.Text = "Длина";
+                    label3.Visible = false;
+                    size2_numericUpDown.Visible = false;
                     break;
             }
         }
@@ -60,6 +66,10 @@ namespace FiguresWF
                 case 1: //окружность
                     fig = new Circle((double)size1_numericUpDown.Value);
                     break;
+                case 2: //квадрат
+                    fig = new square((double)size1_numericUpDown.Value);
+                    break;
+
             }
             protocol_listBox.Items.Add(fig.ToString() + ": P=" + fig.Perimetr);
         }

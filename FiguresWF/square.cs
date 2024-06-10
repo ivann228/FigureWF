@@ -28,14 +28,11 @@ namespace FiguresWF
         }
         public override double Perimetr
         {
-            get { return Length * Length;  }
+            get { return 4 * Length;  }
         }
         public override string ToString()
         {
-            if (mood == 1)
-            return string.Format("Квадрат (Д = {0}), S = {1}", Length, Square());
-            return string.Format("Квадрат (Д = {0}), P = {1}", Length, Perimetr);
-
+            return string.Format("Квадрат (Д = {0})", Length);
         }
 
 

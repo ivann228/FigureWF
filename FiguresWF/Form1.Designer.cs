@@ -48,9 +48,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 27);
+            this.label1.Location = new System.Drawing.Point(24, 33);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 13);
+            this.label1.Size = new System.Drawing.Size(56, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Фигура";
             // 
@@ -62,24 +63,28 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(16, 15);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(223, 131);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(297, 161);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
             // size2_numericUpDown
             // 
-            this.size2_numericUpDown.Location = new System.Drawing.Point(71, 94);
+            this.size2_numericUpDown.Location = new System.Drawing.Point(95, 116);
+            this.size2_numericUpDown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.size2_numericUpDown.Name = "size2_numericUpDown";
-            this.size2_numericUpDown.Size = new System.Drawing.Size(75, 20);
+            this.size2_numericUpDown.Size = new System.Drawing.Size(100, 22);
             this.size2_numericUpDown.TabIndex = 2;
             // 
             // size1_numericUpDown
             // 
-            this.size1_numericUpDown.Location = new System.Drawing.Point(71, 68);
+            this.size1_numericUpDown.Location = new System.Drawing.Point(95, 84);
+            this.size1_numericUpDown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.size1_numericUpDown.Name = "size1_numericUpDown";
-            this.size1_numericUpDown.Size = new System.Drawing.Size(75, 20);
+            this.size1_numericUpDown.Size = new System.Drawing.Size(100, 22);
             this.size1_numericUpDown.TabIndex = 2;
             // 
             // figure_comboBox
@@ -88,36 +93,41 @@
             this.figure_comboBox.FormattingEnabled = true;
             this.figure_comboBox.Items.AddRange(new object[] {
             "Прямоугольник",
-            "Окружность"});
-            this.figure_comboBox.Location = new System.Drawing.Point(71, 27);
+            "Окружность",
+            "Квадрат"});
+            this.figure_comboBox.Location = new System.Drawing.Point(95, 33);
+            this.figure_comboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.figure_comboBox.Name = "figure_comboBox";
-            this.figure_comboBox.Size = new System.Drawing.Size(121, 21);
+            this.figure_comboBox.Size = new System.Drawing.Size(160, 24);
             this.figure_comboBox.TabIndex = 1;
             this.figure_comboBox.SelectedIndexChanged += new System.EventHandler(this.figure_comboBox_SelectedIndexChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(18, 94);
+            this.label3.Location = new System.Drawing.Point(24, 116);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 13);
+            this.label3.Size = new System.Drawing.Size(58, 16);
             this.label3.TabIndex = 0;
             this.label3.Text = "Ширина";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 68);
+            this.label2.Location = new System.Drawing.Point(24, 84);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 13);
+            this.label2.Size = new System.Drawing.Size(48, 16);
             this.label2.TabIndex = 0;
             this.label2.Text = "Длина";
             // 
             // square_button
             // 
-            this.square_button.Location = new System.Drawing.Point(49, 149);
+            this.square_button.Location = new System.Drawing.Point(65, 183);
+            this.square_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.square_button.Name = "square_button";
-            this.square_button.Size = new System.Drawing.Size(109, 23);
+            this.square_button.Size = new System.Drawing.Size(145, 28);
             this.square_button.TabIndex = 2;
             this.square_button.Text = "Расчет площади";
             this.square_button.UseVisualStyleBackColor = true;
@@ -130,26 +140,31 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.protocol_listBox.FormattingEnabled = true;
             this.protocol_listBox.HorizontalScrollbar = true;
-            this.protocol_listBox.Location = new System.Drawing.Point(3, 16);
+            this.protocol_listBox.ItemHeight = 16;
+            this.protocol_listBox.Location = new System.Drawing.Point(4, 20);
+            this.protocol_listBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.protocol_listBox.Name = "protocol_listBox";
-            this.protocol_listBox.Size = new System.Drawing.Size(371, 199);
+            this.protocol_listBox.Size = new System.Drawing.Size(493, 244);
             this.protocol_listBox.TabIndex = 3;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.protocol_listBox);
-            this.groupBox2.Location = new System.Drawing.Point(241, 12);
+            this.groupBox2.Location = new System.Drawing.Point(321, 15);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(377, 225);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Size = new System.Drawing.Size(503, 277);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Протокол расчетов";
             // 
             // perimetr_button
             // 
-            this.perimetr_button.Location = new System.Drawing.Point(49, 178);
+            this.perimetr_button.Location = new System.Drawing.Point(65, 219);
+            this.perimetr_button.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.perimetr_button.Name = "perimetr_button";
-            this.perimetr_button.Size = new System.Drawing.Size(109, 23);
+            this.perimetr_button.Size = new System.Drawing.Size(145, 28);
             this.perimetr_button.TabIndex = 2;
             this.perimetr_button.Text = "Расчет периметра";
             this.perimetr_button.UseVisualStyleBackColor = true;
@@ -157,13 +172,14 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(626, 249);
+            this.ClientSize = new System.Drawing.Size(835, 306);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.perimetr_button);
             this.Controls.Add(this.square_button);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Демо";
             this.groupBox1.ResumeLayout(false);
